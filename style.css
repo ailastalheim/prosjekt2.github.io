@@ -1,0 +1,82 @@
+body{
+    background-image: url(bilder/smoke3.png);
+    font-family: Verdana;
+}
+nav{
+    background-color: dimgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 10px;
+}
+nav a{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+nav .hjem{
+    background-color: #3d3d52;
+    font-size: 32px;
+    padding: 10px;
+}
+@media(max-width:1200px){
+    main{
+        padding-top: 10px;
+    }
+    header>nav{
+        flex-direction: column;
+        justify-content: space-around 1;
+        padding-bottom: 180px;
+    }
+    header>nav>a{
+        margin-bottom: 10px;
+    }
+    main>h1{
+        padding-top: 90px;
+    }
+    img{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media(min-width:1300px){
+    header>nav{
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+}
+header>div>h1{
+    color: #cbd4da;
+    background-image: url(bilder/smoke2.png);
+    margin: 2px;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 500px;
+}
+html{
+    margin: 0;
+}
+main{
+    max-width: 970px;
+    margin: auto;
+    display: grid;
+    grid-auto-columns: repeat(12,1fr);
+    grid-gap: 10px;
+}
+main h1, main h2, main p{
+    padding: 10px;
+}
+main a, main div{
+    background-color: #cccccc;
+    color: #333;
+    text-decoration: none;
+}
+main img, main video{
+    width: 100%;
+}
+.kol-1{grid-column: span 1;}
